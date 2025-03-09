@@ -1,0 +1,5 @@
+[FORMAT]
+max-line-length=130
+
+[MESSAGES CONTROL]
+disable=missing-module-docstring,missing-class-docstring,missing-function-docstring,logging-fstring-interpolation
