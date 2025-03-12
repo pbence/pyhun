@@ -67,6 +67,12 @@ def get_human_date_with_from(raw_date: date):
     return f'{human_date}-{ending}'
 
 
+def get_human_date_with_of(raw_date: date):
+    human_date = get_human_date(raw_date)[:-1]
+
+    return f'{human_date}-i'
+
+
 def get_number_with_letters_under_thousand(number_as_string: str):
     hundreds = {
         '0': '',
