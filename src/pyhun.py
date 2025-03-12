@@ -49,7 +49,7 @@ def get_human_date_with_on(raw_date: date):
         Phoneme.LOW: 'án',
     }
 
-    human_date = get_human_date(date)[:-1]
+    human_date = get_human_date(raw_date)[:-1]
     ending = endings[get_phoneme_for_day(raw_date.day)]
 
     return f'{human_date}-{ending}'
@@ -61,7 +61,7 @@ def get_human_date_with_from(raw_date: date):
         Phoneme.LOW: 'tól',
     }
 
-    human_date = get_human_date(date)[:-1]
+    human_date = get_human_date(raw_date)[:-1]
     ending = endings[get_phoneme_for_day(raw_date.day)]
 
     return f'{human_date}-{ending}'
